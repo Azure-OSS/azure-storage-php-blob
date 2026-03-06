@@ -22,4 +22,3 @@ if (! class_exists('AzureOss\\Storage\\Blob\\Options\\BlobServiceClientOptions',
 if (! class_exists('AzureOss\\Storage\\Blob\\Options\\BlockBlobClientOptions', false) && class_exists(BlockBlobClientOptions::class)) {
     class_alias(BlockBlobClientOptions::class, 'AzureOss\\Storage\\Blob\\Options\\BlockBlobClientOptions');
 }
-
