@@ -11,6 +11,14 @@ We picked up where they left off.
 
 <img src="https://azure-oss.github.io/img/logo.svg" width="150" alt="Screenshot">
 
+Our other packages:
+
+- **[azure-oss/storage-blob-flysystem](https://packagist.org/packages/azure-oss/storage-blob-flysystem)** – Flysystem adapter  
+  ![Downloads](https://img.shields.io/packagist/dt/azure-oss/storage-blob-flysystem)
+
+- **[azure-oss/storage-blob-laravel](https://packagist.org/packages/azure-oss/storage-blob-laravel)** – Laravel filesystem driver  
+  ![Downloads](https://img.shields.io/packagist/dt/azure-oss/storage-blob-laravel)
+
 ## Documentation
 
 You can read the documentation [here](https://azure-oss.github.io).
