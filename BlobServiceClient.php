@@ -15,7 +15,7 @@ use AzureOss\Storage\Blob\Models\TaggedBlob;
 use AzureOss\Storage\Blob\Responses\FindBlobsByTagBody;
 use AzureOss\Storage\Blob\Responses\ListContainersResponseBody;
 use AzureOss\Storage\Common\Auth\StorageSharedKeyCredential;
-use AzureOss\Storage\Common\Auth\TokenCredential;
+use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Common\Helpers\ConnectionStringHelper;
 use AzureOss\Storage\Common\Middleware\ClientFactory;
 use AzureOss\Storage\Common\Sas\AccountSasBuilder;

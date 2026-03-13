@@ -13,7 +13,7 @@ use AzureOss\Storage\Blob\Models\CommitBlockListOptions;
 use AzureOss\Storage\Blob\Models\StageBlockOptions;
 use AzureOss\Storage\Blob\Requests\PutBlockRequestBody;
 use AzureOss\Storage\Common\Auth\StorageSharedKeyCredential;
-use AzureOss\Storage\Common\Auth\TokenCredential;
+use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Common\Middleware\ClientFactory;
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\PromiseInterface;
