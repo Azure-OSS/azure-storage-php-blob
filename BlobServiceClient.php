@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AzureOss\Storage\Blob;
 
+use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Blob\Exceptions\BlobStorageExceptionDeserializer;
 use AzureOss\Storage\Blob\Exceptions\InvalidConnectionStringException;
 use AzureOss\Storage\Blob\Exceptions\UnableToGenerateSasException;
@@ -15,7 +16,6 @@ use AzureOss\Storage\Blob\Models\TaggedBlob;
 use AzureOss\Storage\Blob\Responses\FindBlobsByTagBody;
 use AzureOss\Storage\Blob\Responses\ListContainersResponseBody;
 use AzureOss\Storage\Common\Auth\StorageSharedKeyCredential;
-use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Common\Helpers\ConnectionStringHelper;
 use AzureOss\Storage\Common\Middleware\ClientFactory;
 use AzureOss\Storage\Common\Sas\AccountSasBuilder;

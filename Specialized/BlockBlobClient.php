@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AzureOss\Storage\Blob\Specialized;
 
+use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Blob\Exceptions\BlobStorageExceptionDeserializer;
 use AzureOss\Storage\Blob\Exceptions\InvalidBlobUriException;
 use AzureOss\Storage\Blob\Helpers\BlobUriParserHelper;
@@ -13,7 +14,6 @@ use AzureOss\Storage\Blob\Models\CommitBlockListOptions;
 use AzureOss\Storage\Blob\Models\StageBlockOptions;
 use AzureOss\Storage\Blob\Requests\PutBlockRequestBody;
 use AzureOss\Storage\Common\Auth\StorageSharedKeyCredential;
-use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Common\Middleware\ClientFactory;
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\PromiseInterface;

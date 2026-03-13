@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AzureOss\Storage\Blob;
 
+use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Blob\Exceptions\BlobStorageExceptionDeserializer;
 use AzureOss\Storage\Blob\Exceptions\ContainerAlreadyExistsException;
 use AzureOss\Storage\Blob\Exceptions\ContainerNotFoundException;
@@ -25,7 +26,6 @@ use AzureOss\Storage\Blob\Responses\ListBlobsResponseBody;
 use AzureOss\Storage\Blob\Sas\BlobSasBuilder;
 use AzureOss\Storage\Blob\Specialized\BlockBlobClient;
 use AzureOss\Storage\Common\Auth\StorageSharedKeyCredential;
-use AzureOss\Identity\TokenCredential;
 use AzureOss\Storage\Common\Middleware\ClientFactory;
 use AzureOss\Storage\Common\Sas\SasProtocol;
 use GuzzleHttp\Client;
