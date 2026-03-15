@@ -19,6 +19,30 @@ Our other packages:
 - **[azure-oss/storage-blob-laravel](https://packagist.org/packages/azure-oss/storage-blob-laravel)** – Laravel filesystem driver  
   ![Downloads](https://img.shields.io/packagist/dt/azure-oss/storage-blob-laravel)
 
+## Features
+- Authentication:
+  - Connection strings (access keys)
+  - Shared key credentials
+  - Shared access signatures (SAS) for delegated, time-limited access
+  - Microsoft Entra ID (token-based authentication) via azure-oss/azure-identity
+- Local development:
+  - Supports the Azurite emulator
+- Containers:
+  - Create, delete, and list (including filtering by prefix)
+  - Configure public access when creating a container
+  - Read properties and manage metadata
+- Blobs:
+  - Upload from strings or streams, with transfer tuning for large uploads
+  - Set common HTTP headers (content type, cache control, etc.)
+  - Download via streaming and access response properties
+  - Copy blobs (synchronous and asynchronous)
+  - List blobs (flat, by prefix, and hierarchical listing) with page sizing
+  - Delete blobs
+  - Read properties and manage metadata
+  - Blob index tags: set/get tags and query blobs by tags (account or container scope)
+- SAS:
+  - Generate SAS for blobs, containers, and the account (when using credentials that can sign SAS)
+
 ## Documentation
 
 You can read the documentation [here](https://azure-oss.github.io).
